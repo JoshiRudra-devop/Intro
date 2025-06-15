@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="printedts.css">
+    <title>Hooddie</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="left-nav">
+                <ul class="nav-list">
+                    <div class="logo">
+                        <img src="https://w7.pngwing.com/pngs/426/341/png-transparent-shopping-cart-e-commerce-online-shopping-logo-shopping-cart-blue-service-logo.png"
+                            alt="logo" class="img">
+                    </div>
+                    <a href="index.html">
+                        <li class="nav-link">Home</li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link">Products</li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link">About</li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link">Services</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="right-nav">
+                <a href="cart.html">
+                    <img src="addtocart.png" alt="cart" class="add-cart">
+                </a>
+                <input type="text" name="search" placeholder="search here" class="text-box">
+                <button class="bt btn-sm">Search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="containeer">
+            <div class="image-containeer">
+                <img src="https://img.fruugo.com/product/9/98/641890989_max.jpg" alt="Dark Hooddie" class="image">
+            </div>
+            <div class="countent-containeer">
+                <p class="brand">
+                    Cloths lelo presrnts
+                </p>
+
+                <h2 class="heading"> Dark Hooddie</h2>
+
+                <span class="rating">
+                    (4.9) ★
+                </span>
+
+                <p class="price">₹3200</p>
+                <b class="title"> Product details here :</b>
+                <div>
+                    <pre>
+                                    Fabric:  Cotton 
+                        Sizes avilable:  S, L, XL, XXL, XXXL.
+                                    Colour: Yellow and Blae  
+                    </pre>
+                    <p>
+                        <span class="col">Size :</span>
+                        <select name="size" id="">
+                            <option value="hidden" disabled>-----Select Size-----</option>
+                            <option value="Select Size">Select Size</option>
+                            <option value="S(small)">S(small)</option>
+                            <option value="L(large)">L(large)</option>
+                            <option value="XL(Extra-Large)">XL(Extra-Large)</option>
+                            <option value="XXL(2Extra-Large)">XXL(2Extra-Large)</option>
+                            <option value="XXXL(3Extra Large)">XXXL(3Extra Large)</option>
+                        </select>
+                    </p>
+
+                    <button class="cart" title="Add to Cart">
+                        ADD TO CART
+                    </button>
+                    <button class="buy" title="Buy Now" onclick="on()">
+                        BUY NOW
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="overlay">
+            <div id="text">
+                <ul>
+                    <li>
+                        <div class="modal-heading">
+                            <h2 class="modal-header">
+                                Fill the Details for order Product:
+                            </h2>
+                            <button class="close-btn" id="close-btn" onclick="off()">&times;</button>
+                        </div>
+                    </li>
+                    <hr>
+                    <li>
+                        <div class="body-head">
+                            <p>
+                                Customer Details :
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display:flex;">
+                            <div>
+                                <label class="label-1" style="margin-right:10px ;">
+                                    Name
+                                </label>
+                            </div>
+                            <div>
+                                <input type="text" autocomplete="section-input_3 given-name" size="15"
+                                    data-component="first" class="input-box" placeholder="First Name">
+                                <input type="text" autocomplete="section-input_3 family-name" size="15"
+                                    data-component="last" placeholder="Last Name">
+                                <div>
+                                    <span><label style="min-height:13px" class="label">
+                                            First Name
+                                        </label>
+                                    </span>
+                                    <span>
+                                        <label style="min-height:13px" class="label">
+                                            Last Name
+                                        </label>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="display: flex; margin-top: 12px; ">
+                            <div style="margin-right: 10px;">
+                                <label class="label-1">
+                                    Mobile Number
+                                </label>
+                            </div>
+                            <div>
+                                <span style="vertical-align:top" data-input-type="phone">
+                                    <input type="number" autocomplete="section-input_7 tel-local" class="input-box"
+                                        min="10" maxlength="10" placeholder="Mobile number">
+                                </span>
+
+                            </div>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="" style="display: flex;">
+                            <div style="margin: 12px 60px 5px 0; ">
+                                <label class="label-1">
+                                    Address
+                                </label>
+                            </div>
+                            <div class="">
+                                <textarea rows="1" cols="20" style="margin-top:10px ;"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    <span>
+                                        <span style="vertical-align:top">
+                                            <label style="min-height:13px;margin: 12px 80px 5px 0;" class="label-1">
+                                                State
+                                            </label>
+                                            <input type="text" autocomplete="section-input_9 address-line1"
+                                                style="margin:2px 0 10px ;" placeholder="State">
+                                        </span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <span style="vertical-align:top">
+                                            <label style="min-height:13px; margin: 12px 85px 5px 0;" class="label-1">
+                                                City
+                                            </label>
+                                            <input type="text" autocomplete="section-input_9 address-line2"
+                                                placeholder="City" style="margin:2px 0 10px ;">
+                                        </span>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <span style="vertical-align:top">
+                                            <label style="min-height:13px; margin: 12px 82px 5px 0;" class="label-1">
+                                                Area
+                                            </label>
+                                            <input type="text" autocomplete="section-input_9 address-level2"
+                                                style="margin:2px 0 10px ;" placeholder="Area">
+                                        </span>
+
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <span style="vertical-align:top;">
+                                            <label style="min-height:13px;margin: 12px 4px 5px 0;" class="label-1">
+                                                Pin / Postal-code
+                                            </label>
+                                            <input type="text" autocomplete="section-input_9 postal-code"
+                                                data-component="zip" style="margin:2px 0 10px ;" placeholder="Pin code">
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <div style="display: flex;">
+                        <li colspan="2" style="text-align:left " class="label-1">Payment Method</li>
+                        <td valign="top" style="min-width:50px;vertical-align:top" rowspan="2">
+                            <input type="radio" name="radio">
+                            <div style="display:inline-block;padding-right:4px"><img
+                                    src="https://cdn.jotfor.ms/images/blank.gif" class="paypalpro_img paypalpro_visa"
+                                    style="display:inline-block;vertical-align:middle" alt="visa"><img
+                                    src="https://cdn.jotfor.ms/images/blank.gif"
+                                    style="display:inline-block;vertical-align:middle" alt="mc"><img
+                                    src="https://cdn.jotfor.ms/images/blank.gif" class="paypalpro_img paypalpro_amex"
+                                    style="display:inline-block;vertical-align:middle" alt="amex"><img
+                                    src="https://cdn.jotfor.ms/images/blank.gif"
+                                    style="display:inline-block;vertical-align:middle" alt="dc">
+                            </div>
+                            <label for="input_8_paymentType_credit">
+                                Cash on Delivery
+                            </label>
+                        </td>
+                        <td valign="top" style="padding-bottom:2px !important;text-align:left;vertical-align:top">
+                            <input type="radio" name="radio"><label for="input_8_paymentType_express"><img
+                                    style="vertical-align:middle"
+                                    src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/pp-acceptance-small.png"
+                                    alt="PayPal"></label>
+                        </td>
+                        </tr>
+                        </tbody>
+                        </table>
+                    </div>
+
+                    <div>
+                        <button class="submit-btn" onclick="start() ,off()">Submit</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="popup" id="done">
+            <img src="tick.png">
+            <h2 class="h">
+                Order Placed
+            </h2>
+            <p>
+                <span>
+                    The order made by you has been placed. Thank you!
+                </span>
+            </p>
+            <button type="button" onclick="stop()">OK</button>
+        </div>
+
+
+        <script>
+            let popup = document.getElementById("done")
+            function on() {
+                document.getElementById("overlay").style.display = "block";
+            }
+
+            function off() {
+                document.getElementById("overlay").style.display = "none";
+            }
+            function start() {
+                popup.classList.add("open-popup");
+            }
+
+            function stop() {
+                popup.classList.remove("open-popup");
+            }
+        </script>
+    </main>
+</body>
+
+</html>
